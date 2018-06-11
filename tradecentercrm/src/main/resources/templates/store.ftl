@@ -27,7 +27,7 @@
 <div class="panel">
     <div class="panel-heading">
         <div class="pull-left">
-            <a href="/merchant/${model.merchant.id}">Is owned by ${model.merchant.user.firstName} ${model.merchant.user.secondName}</a>
+            <a href="/user/${model.store.merchant.id}">Is owned by ${model.store.merchant.user.firstName} ${model.store.merchant.user.secondName}</a>
         </div>
     </div>
     <br>
