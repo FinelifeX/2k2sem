@@ -43,7 +43,7 @@ public class StoresPageController {
 
     @RequestMapping(value = "/store/{id}", method = RequestMethod.GET)
     public String showSingleStore(@PathVariable String id, @ModelAttribute("model")ModelMap map) {
-        map.addAttribute(storeService.getById(StringTrimmer.trimStringToLong(id)));
+        map.addAttribute("store", storeService.getById(StringTrimmer.trimStringToLong(id)));
         return "store";
     }
 
